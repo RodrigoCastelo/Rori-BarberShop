@@ -1,0 +1,5 @@
+[
+    {"tipo": "cabello", "precio":800, "id":1},
+    {"tipo": "barba", "precio":500, "id":2},
+    {"tipo": "cabelloybarba", "precio":1000, "id":3}
+]

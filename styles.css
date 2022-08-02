@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+/* NAV Y HEADER*/
+.checkbtn{
+    font-size: 30px;
+    float:left;
+    line-height: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.nav-link{
+    color: black;
+}
+header{
+    background:url(/images/barbershopbanner.png) no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+header div h1{
+    display: flex;
+    justify-content: center;
+}
+/* BODY */
+body main{
+    background:black;
+    padding: 20px 20px;
+}
+/* SECTIONS */
+section{
+    margin: 0px 30px 30px 30px;
+    background: linear-gradient(135deg, blue, white, red);
+    box-shadow: 10px 10px 10px 10px gray;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+section h2{
+    display: flex;
+    justify-content: center;
+}
+section p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+/* UBICACION */
+section.ubi p iframe{
+    display: flex;
+}
+
+
+/* FORM DE TTU TURNO */
+form{
+    margin: 0px 30px 30px 30px;
+    border-radius: 10px ;
+    box-shadow: 10px 10px 10px 10px gray;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, blue, white, red);
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    margin-bottom: 10px;
+}
+form input::placeholder{
+    color: black;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to right, blue, white, red);
+}
+footer div.redes{
+    display:grid;
+    grid-template-areas: "a0 a1 a2";
+    justify-content: space-evenly;
+}
+footer div a.wpp{
+    grid-area: a0;
+}
+footer div a.face{
+    grid-area: a1;
+}
+footer div a.ig{
+    grid-area: a2;
+}
+
+@media screen and (max-width:730px) {
+    section.nos p{
+        display: flex;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    header{
+        display: grid;
+        grid-template-areas: "nav div";
+        height: 100px;
+        grid-template-columns: 60px 1fr;
+    }
+    nav{
+        grid-area: nav;
+    }
+    header div{
+        grid-area: div;
+    }
+    header div h1{
+        text-align: center;
+        line-height: 90px;
+    }
+    .checkbtn{
+        display: block;
+        margin-left: 10px;
+        line-height: 90px;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: black;
+        top: 100px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999 !important;
+    }
+    
+    nav ul li{
+        display: flex !important;
+        margin: 50px 0 !important;
+        line-height: 30px !important;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: #fff !important;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .nav{
+        display: block;
+        justify-content: center;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: center;
+    }
+    .show{
+        left: 0;
+    }
+
+    section.ubi h2{
+        font-size: 20px;
+    }
+    section.ubi p iframe{
+        width: 200px;
+    }
+    form input{
+        width: 150px;
+    }
+}
