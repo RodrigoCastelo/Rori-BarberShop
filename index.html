@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav><!--NAVLIST Y NAVBAR -->
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <img src="https://img.icons8.com/ios-filled/50/undefined/menu--v1.png"/>
@@ -31,16 +31,16 @@
                     <a class="nav-link" id="items" href="#tuturno">Reserva Turno</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="items" href="#clientes">Clientes</a>
+                    <a class="nav-link" id="items" href="#clientes">Turnos</a>
                 </li>
             </ul>
         </nav>
-        <div>
+        <div><!-- TITULO -->
             <h1>Rori BarberShop</h1>
         </div>
     </header>
-    <main class="cuerpo">
-        <section id="nosotros" class="nos">
+    <main class="cuerpo"><!-- CUERPO -->
+        <section id="nosotros" class="nos"><!-- SECTION DE NOSOTROS -->
             <h2>Nosotros</h2>
             <p>
                 Desde 2018 nos dedicamos a mejorar la imagen de nuestros clientes.
@@ -61,14 +61,14 @@
                 - Te esperamos -
             </p>
         </section>
-        <section id="ubicacion" class="ubi">
+        <section id="ubicacion" class="ubi"> <!-- SECTION DE UBICACION -->
             <h2>Nos encontramos en</h2>
             <p><a target="_blank" href="https://www.google.com.ar/maps/place/Barber+Shop+Lan%C3%BAs/@-34.7033642,-58.3931844,19z/data=!3m1!4b1!4m5!3m4!1s0x95bccd21ba6caa0f:0x3d679ed4549e6656!8m2!3d-34.703324!4d-58.3926399?hl=es&authuser=0">Gobernador Felipe Lavallol 55, Lanús, Provincia de Buenos Aires</a></p>
             <p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.0179859582915!2d-58.392637199999996!3d-34.7033653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd21ba6caa0f%3A0x3d679ed4549e6656!2sBarber%20Shop%20Lan%C3%BAs!5e0!3m2!1ses!2sar!4v1655677545848!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
             </section>
-        <section id="tuturno" class="turno">
+        <section id="tuturno" class="turno"> <!-- SECTION DE TUTURNO Y FORMULARIO PARA RESERVAR -->
             <h2>Reserva tu turno</h2>
             <p>Recorda que el horario de atención es de 9:00 a 20:00hs de L a V</p> 
             <form id="formulario">
@@ -84,36 +84,16 @@
                 </div>
             </form>    
         </section>
-        <section>
-            <h2>Clientes</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner active">
-                    <div class="carousel-item ">
-                        <img src="images/bigstock-corte-pelo-cabello.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/corte_degradado_52206_0_600.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/corte_degradado_con_lineas_52206_6_600.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/corte_skin_fade_con_tupe_52206_4_600.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <section><!-- SECTION PARA MOSTRAR LA RESERVA DE TURNO -->
+            <h2>Turnos</h2>
+            <div id="greeting">
             </div>
+            <div id="reset"></div>
         </section>
+        <div id="precios"></div><!-- DIV PARA MOSTRAR EL CORTE.JSON -->
     </main>
-    <footer>
-        <div class="redes"><!-- Redes -->
+    <footer><!-- FOOTER -->
+        <div class="redes"><!-- REDES-->
             <a class="wpp" href="http://web.whatsapp.com/" target="_blank">
                 <img src="https://img.icons8.com/color/48/undefined/whatsapp--v1.png"/>
             </a>
@@ -124,7 +104,7 @@
                 <img src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"/>
             </a>
         </div>
-        <ul class="nav justify-content-center navbar-black">
+        <ul class="nav justify-content-center navbar-black"><!-- NAV LIST -->
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
             </li>
@@ -135,7 +115,7 @@
                 <a class="nav-link" href="#tuturno">Reserva Turno</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#clientes">Clientes</a>
+                <a class="nav-link" href="#clientes">Turnos</a>
             </li>
         </ul>
     </footer>

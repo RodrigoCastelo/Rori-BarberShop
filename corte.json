@@ -1,5 +1,15 @@
 [
-    {"tipo": "cabello", "precio":800, "id":1},
-    {"tipo": "barba", "precio":500, "id":2},
-    {"tipo": "cabelloybarba", "precio":1000, "id":3}
-]
+    {
+        "cabello": "Cabello", 
+        "precio1":"$800", 
+        "id1":1,
+    
+        "barba": "Barba", 
+        "precio2":"$500", 
+        "id2":2,
+    
+        "cabybar": "Cabello y Barba", 
+        "precio3":"$1000", 
+        "id3":3
+    }
+] 
